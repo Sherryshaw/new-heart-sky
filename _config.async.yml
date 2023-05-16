@@ -1,0 +1,52 @@
+language: zh-Hans
+
+# 将要覆盖的语言
+en:
+    site:
+        title: Site Information
+
+zh-Hans:
+    site:
+        title: 本站信息
+# 你也可以扩展其他语言
+
+
+theme:
+    switch: true
+    default: auto
+
+
+favicon:
+    logo: favicon-32x32.png
+    icon16: favicon-16x16.png
+    icon32: favicon-32x32.png
+    appleTouchIcon: apple-touch-icon.png
+    webmanifest: /site.webmanifest
+    visibilitychange: true
+    hidden: failure.ico
+    showText: (/≧▽≦/)咦！又好了！
+    hideText: (●—●)喔哟，崩溃啦！
+
+top_bars:
+    - title: home
+      url: /
+      children:
+          - title: archives2
+            url: /archives2/
+    - title: archives
+      url: /archives/
+      noswup: true
+
+sidebar:
+    social: # 社交地址
+        - name: github
+          icon: fab fa-github
+          url: https://github.com
+        - name: gitee
+          icon: iconfont cg-gitee
+          url: https://gitee.com
+
+
+sidebar:
+    typedTextPrefix: I`m
+    typedText: ["Web Developer"]
