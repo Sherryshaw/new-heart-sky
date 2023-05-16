@@ -45,8 +45,3 @@ sidebar:
         - name: gitee
           icon: iconfont cg-gitee
           url: https://gitee.com
-
-
-sidebar:
-    typedTextPrefix: I`m
-    typedText: ["Web Developer"]
