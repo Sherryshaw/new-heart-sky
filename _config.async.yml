@@ -3,11 +3,11 @@ language: zh-Hans
 # 将要覆盖的语言
 en:
     site:
-        title: Site Information
+        title: Heart Sky
 
 zh-Hans:
     site:
-        title: 本站信息
+        title: Heart Sky
 # 你也可以扩展其他语言
 
 
@@ -22,26 +22,75 @@ favicon:
     icon32: favicon-32x32.png
     appleTouchIcon: apple-touch-icon.png
     webmanifest: /site.webmanifest
-    visibilitychange: true
+    visibilitychange: false
     hidden: failure.ico
     showText: (/≧▽≦/)咦！又好了！
     hideText: (●—●)喔哟，崩溃啦！
 
+assets:
+    icons:
+        type: font # font symbol
+        css:
+        js:
+
+user:
+    name: TianSisi
+    first_name: Sky
+    last_name: Heart
+    email: tianh923@outlook.com
+    domain: https://heartsky.bytian.cn
+    avatar: /img/avatar.jpg
+    describe: 网站简介。
+    ruleText: 暂不接受个人博客以外的友链申请。
+
 top_bars:
-    - title: home
+    - title: 主页
       url: /
-      children:
-          - title: archives2
-            url: /archives2/
-    - title: archives
+    - title: 归档
       url: /archives/
+      children:
+          - title: 测试
+            url: /test/
+    - title: 关于
+      url: /about/
       noswup: true
 
 sidebar:
     social: # 社交地址
         - name: github
           icon: fab fa-github
-          url: https://github.com
+          url: https://github.com/Sherryshaw
         - name: gitee
           icon: iconfont cg-gitee
           url: https://gitee.com
+    typedTextPrefix: I`m
+    typedText: ["Web Developer"]
+    info: # 个人信息
+        - key: 地址
+          val: 陕西
+        - key: 年龄
+          val: 25
+
+banner:
+    index:
+        type: img
+        bgurl: /img/banner.jpg
+        bannerTitle: 你的笑多疗愈，<br>让人生也苏醒~
+        bannerText: 欢迎来到Heart Sky!
+        position: 50% 50%;
+        # fit: cover
+
+footer:
+  powered:
+    enable: false
+  beian:
+    enable: false
+    icp: 
+  copyrightYear: 2023
+  live_time:
+    enable: true
+    prefix: footer.tips
+    start_time: 05/16/2023 17:00:00
+  custom_text: ""
+# 开启pwa
+sw: true
